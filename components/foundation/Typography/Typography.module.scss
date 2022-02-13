@@ -1,0 +1,178 @@
+$breakpoint-s: 640px;
+$breakpoint-m: 768px;
+$breakpoint-l: 1024px;
+$breakpoint-xl: 1280px;
+
+.title3xl {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--primary-font-weight-medium);
+  line-height: 120%;
+  color: var(--transparent);
+  background-image: linear-gradient(
+    90deg,
+    var(--orange-hsl) 0%,
+    var(--pink-hsl) 35%,
+    var(--purple-hsl) 70%,
+    var(--blue-hsl) 100%
+  );
+  background-clip: text;
+
+  @media (min-width: $breakpoint-l) {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+.title2xl {
+  font-size: var(--font-size-xl);
+  font-weight: var(--primary-font-weight-book);
+  line-height: 130%;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+.titleXl {
+  font-size: var(--font-size-l);
+  font-weight: var(--primary-font-weight-medium);
+  line-height: 130%;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-xl);
+  }
+}
+
+.titleL {
+  font-size: var(--font-size-m);
+  font-weight: var(--primary-font-weight-medium);
+  line-height: 130%;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-l);
+  }
+}
+
+.titleM {
+  font-size: var(--font-size-s);
+  font-weight: var(--primary-font-weight-book);
+  line-height: 130%;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-m);
+  }
+}
+
+.titleS {
+  font-size: var(--font-size-xs);
+  font-weight: var(--primary-font-weight-book);
+  line-height: 130%;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-s);
+  }
+}
+
+.titleXs {
+  font-size: var(--font-size-xs);
+  font-weight: var(--primary-font-weight-medium);
+  line-height: 130%;
+}
+
+.body {
+  font-family: var(--primary-font-family);
+  font-weight: var(--primary-font-weight-book);
+  font-size: var(--font-size-ms);
+  font-style: normal;
+  line-height: 180%;
+  letter-spacing: 0.03rem;
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+.caption {
+  font-family: var(--secondary-font-family);
+  font-weight: var(--secondary-font-weight-regular);
+  font-size: var(--font-size-ms);
+  line-height: 130%;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 1.5px;
+    background-color: var(--pink);
+    top: 2px;
+    left: -16px;
+    height: 16px;
+    position: absolute;
+  }
+
+  &.pink::before {
+    background-color: var(--pink);
+  }
+
+  &.purple::before {
+    background-color: var(--purple);
+  }
+
+  &.blue::before {
+    background-color: var(--blue);
+  }
+}
+
+.captionS {
+  font-family: var(--secondary-font-family);
+  font-weight: var(--secondary-font-weight-regular);
+  font-size: var(--font-size-s);
+  line-height: 130%;
+}
+
+.byline {
+  padding-left: 28px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 1px;
+    left: 0;
+    top: 12px;
+  }
+
+  &.orange::before {
+    background-color: var(--orange);
+  }
+
+  &.pink::before {
+    background-color: var(--pink);
+  }
+
+  &.purple::before {
+    background-color: var(--purple);
+  }
+
+  &.blue::before {
+    background-color: var(--blue);
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 48px;
+
+    &::before {
+      width: 40px;
+    }
+  }
+}
+
+.pink {
+  color: var(--pink);
+}
+
+.purple {
+  color: var(--purple);
+}
+
+.blue {
+  color: var(--blue);
+}

@@ -1,0 +1,22 @@
+@import url('https://use.typekit.net/dpm3ksq.css');
+
+:root {
+  --primary-font-family: canada-type-gibson, sans-serif;
+  --secondary-font-family: source-code-pro, monospace;
+
+  --font-size-2xs: 9px;
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-ms: 16px;
+  --font-size-m: 18px;
+  --font-size-l: 24px;
+  --font-size-xl: 36px;
+  --font-size-2xl: 48px;
+  --font-size-3xl: 64px;
+
+  --primary-font-weight-light: 200;
+  --primary-font-weight-book: 300;
+  --primary-font-weight-medium: 500;
+
+  --secondary-font-weight-regular: 400;
+}

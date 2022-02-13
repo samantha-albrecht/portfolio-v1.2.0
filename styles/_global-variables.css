@@ -1,0 +1,20 @@
+@import './_color-variables.css';
+@import './_typography-variables.css';
+
+:root {
+  --background-color: var(--white);
+  --text-color: var(--dk-gray-7);
+  --nav-color: var(--purple);
+  --guide-color: var(--lt-gray-6);
+
+  --border-radius-s: 4px;
+  --border-radius-m: 6px;
+  --border-radius-l: 12px;
+
+  /* --title-copy: var(--font-family) var(--font-weight-bold) var(--font-2xl);
+  --caption-copy: var(--mono-font-family) var(--mono-font-weight-regular)
+    var(--font-m);
+  --body-copy: var(--font-family) var(--font-weight-book) var(--font-m);
+  --nav-copy: var(--mono-font-family) var(--mono-font-weight-regular)
+    var(--font-m); */
+}

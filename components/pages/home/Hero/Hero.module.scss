@@ -1,0 +1,17 @@
+.position {
+  display: grid;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.content {
+  display: grid;
+  row-gap: 16px;
+  padding: 80px 16px;
+
+  @media (min-width: 1024px) {
+    grid-area: 1/1/2/4;
+    padding: 180px 16px;
+  }
+}
