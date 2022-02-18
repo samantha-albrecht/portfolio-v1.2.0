@@ -1,7 +1,7 @@
-@import url('https://use.typekit.net/dpm3ksq.css');
+@import url('https://fonts.googleapis.com/css2?family=Petrona:wght@500;700;800&family=Source+Code+Pro&display=swap');
 
 :root {
-  --primary-font-family: canada-type-gibson, sans-serif;
+  --primary-font-family: petrona, serif;
   --secondary-font-family: source-code-pro, monospace;
 
   --font-size-2xs: 9px;
@@ -12,11 +12,12 @@
   --font-size-l: 24px;
   --font-size-xl: 36px;
   --font-size-2xl: 48px;
-  --font-size-3xl: 64px;
+  --font-size-3xl: 4rem;
+  --font-size-4xl: 5.25rem;
 
-  --primary-font-weight-light: 200;
-  --primary-font-weight-book: 300;
   --primary-font-weight-medium: 500;
+  --primary-font-weight-bold: 700;
+  --primary-font-weight-extra-bold: 800;
 
   --secondary-font-weight-regular: 400;
 }

@@ -1,4 +1,7 @@
 .mainWrapper {
-  display: flex;
-  justify-content: center;
+  background-color: var(--body-background-color);
+
+  @media (min-width: 768px) {
+    padding: 0 16px;
+  }
 }

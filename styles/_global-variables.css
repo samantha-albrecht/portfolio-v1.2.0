@@ -2,19 +2,26 @@
 @import './_typography-variables.css';
 
 :root {
-  --background-color: var(--white);
-  --text-color: var(--dk-gray-7);
-  --nav-color: var(--purple);
-  --guide-color: var(--lt-gray-6);
+  --text1: #1d2b36;
+  --text2: #2f6652;
+  --text3: #fffbf9;
 
-  --border-radius-s: 4px;
-  --border-radius-m: 6px;
-  --border-radius-l: 12px;
+  --primary: #2f6652;
+  --primary-rgb: rgb(47, 102, 82);
+  --secondary: #f38879;
+  --secondary-rgb: rgb(243, 136, 121);
+  --tertiary: #cdac92;
+  --tertiary-rgb: rgb(205, 172, 121);
 
-  /* --title-copy: var(--font-family) var(--font-weight-bold) var(--font-2xl);
-  --caption-copy: var(--mono-font-family) var(--mono-font-weight-regular)
-    var(--font-m);
-  --body-copy: var(--font-family) var(--font-weight-book) var(--font-m);
-  --nav-copy: var(--mono-font-family) var(--mono-font-weight-regular)
-    var(--font-m); */
+  --body-background-color: rgba(205, 172, 121, 0.05);
+  --nav-background-color: rgba(253, 251, 250, 0.6);
+  --button-background-color: var(--primary);
+  --lt-card-background-color: rgba(205, 172, 121, 0.2);
+  --dk-card-background-color: var(--primary);
+
+  --guide-color: rgba(205, 172, 121, 0.8);
+
+  --nav-box-shadow: 0px, 3px, 8px, 0px rgba(213, 177, 153, 0.2);
+  --lt-box-shadow: 5px, 10px, 25px, 4px rgba(213, 177, 153, 0.2);
+  --dk-box-shadow: 5px, 10px, 25px, 4px rgba(3, 65, 52, 0.2);
 }

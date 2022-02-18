@@ -3,18 +3,9 @@
   --black: #000;
   --transparent: transparent;
 
-  --orange: #ffc555;
-  --orange-rgb: 255, 197, 85;
-  --orange-hsl: hsl(40 100% 67%);
-  --pink: #ea5455;
-  --pink-rgb: 234, 84, 85;
-  --pink-hsl: hsl(360 78% 62%);
-  --purple: #7367f0;
-  --purple-rgb: 115, 103, 240;
-  --purple-hsl: hsl(245 82% 67%);
-  --blue: #0396ff;
-  --blue-rgb: 3, 150, 255;
-  --blue-hsl: hsl(205 100% 51%);
+  --evergreen: #2f6652;
+  --salmon: #f38870;
+  --tan: #cdac92;
 
   --lt-gray-1: #f9fafa;
   --lt-gray-2: #f1f3f5;

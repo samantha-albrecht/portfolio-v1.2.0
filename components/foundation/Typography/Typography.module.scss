@@ -4,21 +4,13 @@ $breakpoint-l: 1024px;
 $breakpoint-xl: 1280px;
 
 .title3xl {
-  font-size: var(--font-size-2xl);
-  font-weight: var(--primary-font-weight-medium);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--primary-font-weight-extra-bold);
+  letter-spacing: -1px;
   line-height: 120%;
-  color: var(--transparent);
-  background-image: linear-gradient(
-    90deg,
-    var(--orange-hsl) 0%,
-    var(--pink-hsl) 35%,
-    var(--purple-hsl) 70%,
-    var(--blue-hsl) 100%
-  );
-  background-clip: text;
 
   @media (min-width: $breakpoint-l) {
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-4xl);
   }
 }
 
@@ -95,28 +87,17 @@ $breakpoint-xl: 1280px;
   font-size: var(--font-size-ms);
   line-height: 130%;
   position: relative;
+  color: var(--text2);
 
   &::before {
     content: '';
     display: block;
     width: 1.5px;
-    background-color: var(--pink);
+    background-color: var(--text2);
     top: 2px;
     left: -16px;
     height: 16px;
     position: absolute;
-  }
-
-  &.pink::before {
-    background-color: var(--pink);
-  }
-
-  &.purple::before {
-    background-color: var(--purple);
-  }
-
-  &.blue::before {
-    background-color: var(--blue);
   }
 }
 
@@ -138,22 +119,7 @@ $breakpoint-xl: 1280px;
     height: 1px;
     left: 0;
     top: 12px;
-  }
-
-  &.orange::before {
-    background-color: var(--orange);
-  }
-
-  &.pink::before {
-    background-color: var(--pink);
-  }
-
-  &.purple::before {
-    background-color: var(--purple);
-  }
-
-  &.blue::before {
-    background-color: var(--blue);
+    background-color: var(--text2);
   }
 
   @media (min-width: 768px) {
@@ -163,16 +129,4 @@ $breakpoint-xl: 1280px;
       width: 40px;
     }
   }
-}
-
-.pink {
-  color: var(--pink);
-}
-
-.purple {
-  color: var(--purple);
-}
-
-.blue {
-  color: var(--blue);
 }

@@ -9,7 +9,7 @@ body {
   font-style: normal;
   line-height: 180%;
   letter-spacing: 0.03rem;
-  color: var(--text-color);
+  color: var(--text1);
   -webkit-font-smoothing: antialiased;
 }
 
