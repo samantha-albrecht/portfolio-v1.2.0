@@ -3,7 +3,7 @@ $breakpoint-m: 768px;
 $breakpoint-l: 1024px;
 $breakpoint-xl: 1280px;
 
-.title3xl {
+.title4xl {
   font-size: var(--font-size-3xl);
   font-weight: var(--primary-font-weight-extra-bold);
   letter-spacing: -1px;
@@ -14,9 +14,21 @@ $breakpoint-xl: 1280px;
   }
 }
 
+.title3xl {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--primary-font-weight-bold);
+  letter-spacing: -1px;
+  line-height: 130%;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-3xl);
+  }
+}
+
 .title2xl {
   font-size: var(--font-size-xl);
-  font-weight: var(--primary-font-weight-book);
+  font-weight: var(--primary-font-weight-bold);
+  letter-spacing: -1px;
   line-height: 130%;
 
   @media (min-width: $breakpoint-m) {
@@ -27,6 +39,7 @@ $breakpoint-xl: 1280px;
 .titleXl {
   font-size: var(--font-size-l);
   font-weight: var(--primary-font-weight-medium);
+  letter-spacing: -1px;
   line-height: 130%;
 
   @media (min-width: $breakpoint-m) {
@@ -46,7 +59,7 @@ $breakpoint-xl: 1280px;
 
 .titleM {
   font-size: var(--font-size-s);
-  font-weight: var(--primary-font-weight-book);
+  font-weight: var(--primary-font-weight-medium);
   line-height: 130%;
 
   @media (min-width: $breakpoint-m) {
@@ -56,7 +69,7 @@ $breakpoint-xl: 1280px;
 
 .titleS {
   font-size: var(--font-size-xs);
-  font-weight: var(--primary-font-weight-book);
+  font-weight: var(--primary-font-weight-bold);
   line-height: 130%;
 
   @media (min-width: $breakpoint-m) {
@@ -101,11 +114,12 @@ $breakpoint-xl: 1280px;
   }
 }
 
-.captionS {
+.captionSmall {
   font-family: var(--secondary-font-family);
   font-weight: var(--secondary-font-weight-regular);
   font-size: var(--font-size-s);
   line-height: 130%;
+  color: var(--text2);
 }
 
 .byline {
@@ -129,4 +143,8 @@ $breakpoint-xl: 1280px;
       width: 40px;
     }
   }
+}
+
+.text3 {
+  color: var(--text3);
 }

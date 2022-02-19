@@ -1,13 +1,5 @@
 .mainGrid {
   display: grid;
-  // grid-template-columns: 15px minmax(100px, 1080px) 15px;
-  // grid-template-rows: 16px auto 74px;
-  width: 100%;
-  // max-width: 1290px;
-
-  @media (min-width: 1024px) {
-    // grid-template-columns: auto minmax(100px, 1080px) auto;
-  }
 }
 
 .guideLayout {
@@ -18,5 +10,7 @@
 .contentLayout {
   grid-area: 1 / 1 / 2 / 2;
   z-index: 3;
+  display: grid;
+  row-gap: 100px;
   padding: 75px 0;
 }

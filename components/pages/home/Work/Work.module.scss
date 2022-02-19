@@ -1,0 +1,38 @@
+.innerWrapper {
+  grid-area: 1 / 2 / 2 / 3;
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.headingWrapper {
+  display: grid;
+  row-gap: 0.5rem;
+  padding: 0 1rem;
+
+  @media (min-width: 1024px) {
+    grid-column: 1 / 5;
+  }
+}
+
+.projectWrapper {
+  margin-top: 4rem;
+}
+
+.imagePlaceholder {
+  height: 100px;
+  width: 100%;
+  background-color: var(--primary);
+}
+
+.descriptionWrapper {
+  display: grid;
+  row-gap: 0.5rem;
+  padding: 3rem 1rem 0;
+
+  @media (min-width: 1024px) {
+    grid-column: 1 / 4;
+  }
+}

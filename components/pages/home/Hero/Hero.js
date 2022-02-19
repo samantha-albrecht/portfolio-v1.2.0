@@ -1,15 +1,16 @@
+import MainGrid from '@components/foundation/MainGrid'
 import Typography from '@components/foundation/Typography'
 import styles from './Hero.module.scss'
 
 function Hero() {
   return (
-    <div className={styles.heroWrapper}>
+    <MainGrid color="ltBackground">
       <div className={styles.innerWrapper}>
         <div className={styles.caption}>
           <Typography variant="caption">Hi, I'm Samantha &mdash;</Typography>
         </div>
         <div className={styles.title}>
-          <Typography variant="title3xl">
+          <Typography variant="title4xl">
             Designer, developer & creative problem solver
           </Typography>
         </div>
@@ -21,7 +22,7 @@ function Hero() {
           </Typography>
         </div>
       </div>
-    </div>
+    </MainGrid>
   )
 }
 

@@ -3,7 +3,12 @@ import cn from 'classnames'
 import styles from './Typography.module.scss'
 
 const variantsMapping = {
-  title3xl: 'h1',
+  title4xl: 'h1',
+  title3xl: 'h2',
+  title2xl: 'h2',
+  titleXl: 'h3',
+  titleL: 'h3',
+  titleS: 'h4',
   h2: 'h2',
   h3: 'h3',
   h4: 'h4',
@@ -14,8 +19,8 @@ const variantsMapping = {
   byline: 'p',
   subheading1: 'h6',
   subheading2: 'h6',
-  body1: 'p',
-  body2: 'p',
+  body: 'p',
+  bodySmall: 'p',
 }
 
 const Typography = ({ variant, color, children, ...props }) => {

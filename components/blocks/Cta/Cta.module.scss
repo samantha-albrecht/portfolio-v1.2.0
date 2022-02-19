@@ -1,0 +1,27 @@
+.innerWrapper {
+  grid-area: 1 / 2 / 2 / 3;
+  padding: 10rem 1rem;
+}
+
+.link {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--secondary);
+
+  &::after {
+    content: '';
+    height: 0.3rem;
+    width: 0;
+    background-color: var(--secondary);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
