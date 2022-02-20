@@ -22,9 +22,7 @@
 }
 
 .imagePlaceholder {
-  height: 100px;
   width: 100%;
-  background-color: var(--primary);
 }
 
 .descriptionWrapper {
@@ -34,5 +32,40 @@
 
   @media (min-width: 1024px) {
     grid-column: 1 / 4;
+  }
+}
+
+.descriptionCaption {
+  display: flex;
+}
+
+.viewPageLink {
+  transition: all 0.3s ease-in-out;
+  padding: 0 0.25rem;
+  color: var(--primary);
+
+  &:hover {
+    transform: translate(4px, -4px);
+  }
+}
+
+.descriptionLink {
+  position: relative;
+  width: fit-content;
+  color: var(--secondary);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    height: 2px;
+    width: 0;
+    background-color: var(--secondary);
+  }
+
+  &:hover::after {
+    width: 100%;
   }
 }

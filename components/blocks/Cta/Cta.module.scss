@@ -1,6 +1,10 @@
 .innerWrapper {
   grid-area: 1 / 2 / 2 / 3;
-  padding: 10rem 1rem;
+  padding: 5rem 1rem;
+
+  @media (min-width: 1024px) {
+    padding: 8rem 1rem;
+  }
 }
 
 .link {
@@ -9,6 +13,11 @@
   margin-left: 1rem;
   text-decoration: none;
   color: var(--secondary);
+
+  &::before {
+    content: '\a';
+    white-space: pre;
+  }
 
   &::after {
     content: '';
@@ -23,5 +32,12 @@
 
   &:hover::after {
     width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    &::before {
+      content: '';
+      white-space: unset;
+    }
   }
 }

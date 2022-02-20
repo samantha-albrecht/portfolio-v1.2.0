@@ -15,7 +15,7 @@ function Footer() {
           <div className={styles.contentLayout}>
             <MainGrid>
               <div className={styles.innerWrapper}>
-                <Typography variant="bodyFooter">
+                <Typography variant="footer">
                   &#169; {new Date().getUTCFullYear()} Designed &amp; built by
                   Samantha&nbsp;Albrecht
                 </Typography>

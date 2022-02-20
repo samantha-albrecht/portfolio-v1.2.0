@@ -5,7 +5,6 @@ import styles from './Quote.module.scss'
 function Quote() {
   return (
     <MainGrid>
-      {/* <div className={styles.quoteWrapper}> */}
       <div className={styles.innerWrapper}>
         <div className={styles.quote}>
           <p className={styles.openQuote}>&#8220;</p>
@@ -23,7 +22,6 @@ function Quote() {
           </Typography>
         </div>
       </div>
-      {/* </div> */}
     </MainGrid>
   )
 }
