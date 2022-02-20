@@ -3,8 +3,8 @@
 
 html,
 body {
-  font-family: var(--primary-font-family);
-  font-weight: var(--primary-font-weight-book);
+  font-family: var(--tertiary-font-family);
+  font-weight: var(--tertiary-font-weight-regular);
   font-size: var(--font-size-ms);
   font-style: normal;
   line-height: 180%;
@@ -13,9 +13,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-code {
+/* code {
   background: #fafafa;
   border-radius: 5px;
   padding: 0.75rem;
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
-}
+} */

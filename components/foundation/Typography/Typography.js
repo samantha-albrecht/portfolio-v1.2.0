@@ -3,6 +3,8 @@ import cn from 'classnames'
 import styles from './Typography.module.scss'
 
 const variantsMapping = {
+  navH1: 'h1',
+  navLink: 'li',
   title4xl: 'h1',
   title3xl: 'h2',
   title2xl: 'h2',

@@ -1,9 +1,143 @@
+.mainGrid {
+  display: grid;
+}
+
+.guideLayout {
+  grid-area: 1 / 1 / 2 / 2;
+  z-index: 2;
+}
+
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 4;
-  background-color: blue;
-  margin: 16px;
+  grid-area: 1 / 1 / 2 / 2;
+  z-index: 6;
+  display: grid;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem 0;
+
+  &.visible {
+    opacity: 1;
+    pointer-events: unset;
+    z-index: 6;
+
+    .innerWrapper {
+      background-color: var(--nav-background-color);
+      box-shadow: var(--nav-box-shadow);
+      backdrop-filter: blur(5px);
+    }
+  }
+
+  &.hide {
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+
+.innerWrapper {
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-radius: 6px;
+  padding: 1rem;
+
+  @media (min-width: 768px) {
+  }
+}
+
+.navWrapper {
+  position: fixed;
+  z-index: 6;
+  top: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: var(--nav-box-shadow);
+  transform: translateY(-102%);
+  transition: transform 0.3s ease-in-out;
+
+  &.visible {
+    background-color: rgba(253, 251, 250, 0.9);
+    transform: translateY(0);
+  }
+
+  @media (min-width: 768) {
+    display: block;
+  }
+}
+
+.navList {
+  // display: flex;
+}
+
+.navItem {
+  font-family: var(--secondary-font-family);
+  font-weight: var(--secondary-font-weight-regular);
+  font-size: 1.1rem;
+  line-height: 130%;
+  position: relative;
+  color: var(--text2);
+
+  width: fit-content;
+  margin-right: 24px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+
+  &::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: var(--text2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.navOpen,
+.navClose {
+  border: none;
+  background-color: transparent;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.navOpen {
+  display: flex;
+  align-items: center;
+  padding: 2px 0 2px 2px;
+
+  @media (min-width: 768) {
+    display: none;
+  }
+}
+
+.navClose {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(47, 102, 82, 0.7);
+  backdrop-filter: blur(5px);
+  transition: background-color 0.3s ease-in-out;
 }

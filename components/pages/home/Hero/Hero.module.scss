@@ -2,11 +2,11 @@
   grid-area: 1 / 2 / 2 / 3;
   display: grid;
   row-gap: 1rem;
-  padding: 8rem 0;
+  padding: 9rem 0 8rem;
 
   @media (min-width: 1024px) {
     grid-template-columns: repeat(4, 1fr);
-    padding: 10rem 0;
+    padding: 12rem 0 10rem;
   }
 }
 

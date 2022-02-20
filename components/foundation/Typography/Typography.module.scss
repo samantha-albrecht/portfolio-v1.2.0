@@ -3,8 +3,16 @@ $breakpoint-m: 768px;
 $breakpoint-l: 1024px;
 $breakpoint-xl: 1280px;
 
+.navH1 {
+  font-family: var(--secondary-font-family);
+  font-weight: var(--secondary-font-weight-regular);
+  font-size: 1.1rem;
+  color: var(--text2);
+}
+
 .title4xl {
   font-size: var(--font-size-3xl);
+  font-family: var(--primary-font-family);
   font-weight: var(--primary-font-weight-extra-bold);
   letter-spacing: -1px;
   line-height: 120%;
@@ -16,6 +24,7 @@ $breakpoint-xl: 1280px;
 
 .title3xl {
   font-size: var(--font-size-2xl);
+  font-family: var(--primary-font-family);
   font-weight: var(--primary-font-weight-bold);
   letter-spacing: -1px;
   line-height: 130%;
@@ -27,6 +36,7 @@ $breakpoint-xl: 1280px;
 
 .title2xl {
   font-size: var(--font-size-xl);
+  font-family: var(--primary-font-family);
   font-weight: var(--primary-font-weight-bold);
   letter-spacing: -1px;
   line-height: 130%;
@@ -38,6 +48,7 @@ $breakpoint-xl: 1280px;
 
 .titleXl {
   font-size: var(--font-size-l);
+  font-family: var(--primary-font-family);
   font-weight: var(--primary-font-weight-medium);
   letter-spacing: -1px;
   line-height: 130%;
@@ -49,6 +60,7 @@ $breakpoint-xl: 1280px;
 
 .titleL {
   font-size: var(--font-size-m);
+  font-family: var(--primary-font-family);
   font-weight: var(--primary-font-weight-medium);
   line-height: 130%;
 
@@ -59,6 +71,7 @@ $breakpoint-xl: 1280px;
 
 .titleM {
   font-size: var(--font-size-s);
+  font-family: var(--primary-font-family);
   font-weight: var(--primary-font-weight-medium);
   line-height: 130%;
 
@@ -69,6 +82,7 @@ $breakpoint-xl: 1280px;
 
 .titleS {
   font-size: var(--font-size-xs);
+  font-family: var(--primary-font-family);
   font-weight: var(--primary-font-weight-bold);
   line-height: 130%;
 
@@ -79,19 +93,12 @@ $breakpoint-xl: 1280px;
 
 .titleXs {
   font-size: var(--font-size-xs);
+  font-family: var(--primary-font-family);
   font-weight: var(--primary-font-weight-medium);
   line-height: 130%;
 }
 
 .body {
-  font-family: var(--primary-font-family);
-  font-weight: var(--primary-font-weight-book);
-  font-size: var(--font-size-ms);
-  font-style: normal;
-  line-height: 180%;
-  letter-spacing: 0.03rem;
-  color: var(--text-color);
-  -webkit-font-smoothing: antialiased;
 }
 
 .caption {
