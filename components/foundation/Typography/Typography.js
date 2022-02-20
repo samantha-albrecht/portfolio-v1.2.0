@@ -23,6 +23,7 @@ const variantsMapping = {
   subheading2: 'h6',
   body: 'p',
   bodySmall: 'p',
+  bodyFooter: 'p',
 }
 
 const Typography = ({ variant, color, children, ...props }) => {
