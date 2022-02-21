@@ -104,16 +104,19 @@ function Header() {
                     <ul className={styles.navList}>
                       <li className={styles.navItem}>
                         <Link href="/#work">
-                          <a>Work</a>
+                          <a title="Go to work section">Work</a>
                         </Link>
                       </li>
                       <li className={styles.navItem}>
                         <Link href="/about">
-                          <a>About</a>
+                          <a title="Go to about page">About</a>
                         </Link>
                       </li>
                       <li className={styles.navItem}>
-                        <a href="https://www.linkedin.com/in/samantha-albrecht-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-998053156/">
+                        <a
+                          href="https://www.linkedin.com/in/samantha-albrecht-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-998053156/"
+                          title="Contact me on LinkedIn"
+                        >
                           Contact
                         </a>
                       </li>

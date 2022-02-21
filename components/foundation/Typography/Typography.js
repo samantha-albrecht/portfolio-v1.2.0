@@ -10,6 +10,7 @@ const variantsMapping = {
   title2xl: 'h2',
   titleXl: 'h3',
   titleL: 'h3',
+  titleM: 'h3',
   titleS: 'h4',
   h2: 'h2',
   h3: 'h3',

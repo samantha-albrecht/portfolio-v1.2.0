@@ -2,6 +2,8 @@ import Cta from '@components/blocks/Cta'
 import Guides from '@components/foundation/Guides'
 import MainWrapper from '@components/foundation/MainWrapper'
 import Bio from '../Bio'
+import Books from '../Books'
+import Experience from '../Experience'
 import styles from './AboutView.module.scss'
 
 function AboutView() {
@@ -13,7 +15,9 @@ function AboutView() {
         </div>
         <div className={styles.contentLayout}>
           <Bio />
-          <Cta />
+          <Experience />
+          <Books />
+          <Cta currentPage="about" />
         </div>
       </div>
     </MainWrapper>

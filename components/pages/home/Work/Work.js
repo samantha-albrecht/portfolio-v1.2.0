@@ -97,7 +97,7 @@ function Project() {
 
 function Work() {
   return (
-    <div className={styles.workWrapper}>
+    <div className={styles.workWrapper} id="work">
       <MainGrid>
         <div className={styles.innerWrapper}>
           <div className={styles.headingWrapper}>

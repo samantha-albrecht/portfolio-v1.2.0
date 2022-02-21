@@ -70,14 +70,11 @@ $breakpoint-xl: 1280px;
 }
 
 .titleM {
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
   font-family: var(--primary-font-family);
-  font-weight: var(--primary-font-weight-medium);
+  font-weight: var(--primary-font-weight-bold);
+  letter-spacing: -0.5px;
   line-height: 130%;
-
-  @media (min-width: $breakpoint-m) {
-    font-size: var(--font-size-m);
-  }
 }
 
 .titleS {
@@ -96,6 +93,10 @@ $breakpoint-xl: 1280px;
   font-family: var(--primary-font-family);
   font-weight: var(--primary-font-weight-medium);
   line-height: 130%;
+}
+
+.bodySmall {
+  font-size: var(--font-size-s);
 }
 
 .footer {

@@ -18,10 +18,11 @@
   left: 0;
   right: 0;
   z-index: 6;
+  transition: all 0.3s ease-in-out;
 
-  &.animateSlideIn {
-    transition: all 0.3s ease-in-out;
-  }
+  // &.animateSlideIn {
+  //   transition: all 0.3s ease-in-out;
+  // }
 
   &.visible {
     opacity: 1;
