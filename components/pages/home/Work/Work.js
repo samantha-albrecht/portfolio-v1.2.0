@@ -6,7 +6,7 @@ import styles from './Work.module.scss'
 function Project() {
   const projects = [
     {
-      imageSrc: '/img/work/project-screenshots-ami.png',
+      imageSrc: '/images/work/ami.png',
       imageAlt: 'Actionable Marketing Institute by CoSchedule',
       descriptionCaption:
         'Actionable Marketing Institute powered by CoSchedule',
@@ -18,7 +18,7 @@ function Project() {
       urlTitle: 'Go to the Actionable Marketing Institute',
     },
     {
-      imageSrc: '/img/work/project-screenshots-hs.png',
+      imageSrc: '/images/work/hs.png',
       imageAlt: 'Headline Studio by CoSchedule',
       descriptionCaption: 'Headline Studio by CoSchedule',
       descriptionTitle: 'New Product Sign Up Page',
@@ -34,15 +34,15 @@ function Project() {
     <>
       {projects.map((project, index) => (
         <div className={styles.projectWrapper}>
-          <MainGrid color="whiteBackground">
+          <MainGrid>
             <div className={styles.innerWrapper}>
-              <div className={styles.imagePlaceholder}>
+              <div className={styles.imageWrapper}>
                 <img
                   className={styles.image}
                   src={project.imageSrc}
                   alt={project.imageAlt}
-                  width={960}
-                  height={540}
+                  width={750}
+                  height={468}
                   loading="lazy"
                 />
               </div>
