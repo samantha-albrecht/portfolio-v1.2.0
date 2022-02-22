@@ -29,21 +29,35 @@ function Experience() {
               </svg>
               <div className={styles.companyName}>
                 <Typography variant="titleM">CoSchedule</Typography>
-                <Typography variant="bodySmall">2 years, 11 months</Typography>
+                <Typography variant="body" size="small">
+                  2 years, 11 months
+                </Typography>
               </div>
             </div>
             <div className={styles.roleGroup}>
               <div className={styles.role}>
-                <Typography variant="body">Web designer</Typography>
-                <Typography variant="body">April 2021 - Present</Typography>
+                <Typography variant="body" size="medium" weight="body-bold">
+                  Web designer
+                </Typography>
+                <Typography variant="body" size="small">
+                  April 2021 - Present
+                </Typography>
               </div>
               <div className={styles.role}>
-                <Typography variant="body">Junior web designer</Typography>
-                <Typography variant="body">April 2020 - April 2021</Typography>
+                <Typography variant="body" size="medium" weight="body-bold">
+                  Junior web designer
+                </Typography>
+                <Typography variant="body" size="small">
+                  April 2020 - April 2021
+                </Typography>
               </div>
               <div className={styles.role}>
-                <Typography variant="body">Graphic Design Intern</Typography>
-                <Typography variant="body">March 2019 - April 2020</Typography>
+                <Typography variant="body" size="medium" weight="body-bold">
+                  Graphic design intern
+                </Typography>
+                <Typography variant="body" size="small">
+                  March 2019 - April 2020
+                </Typography>
               </div>
             </div>
           </div>
@@ -73,13 +87,17 @@ function Experience() {
               </svg>
               <div className={styles.companyName}>
                 <Typography variant="titleM">Dynamic Communities</Typography>
-                <Typography variant="bodySmall">1 years, 2 months</Typography>
+                <Typography variant="body" size="small">
+                  1 years, 2 months
+                </Typography>
               </div>
             </div>
             <div className={styles.roleGroup}>
               <div className={styles.role}>
-                <Typography variant="body">Marketing intern</Typography>
-                <Typography variant="body">
+                <Typography variant="body" size="medium" weight="body-bold">
+                  Marketing intern
+                </Typography>
+                <Typography variant="body" size="small">
                   January 2018 - March 2019
                 </Typography>
               </div>

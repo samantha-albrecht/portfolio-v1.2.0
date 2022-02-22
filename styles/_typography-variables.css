@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&family=Petrona:wght@500;700;800&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Petrona:wght@500;700;800&family=Source+Code+Pro&display=swap');
 
 :root {
   --primary-font-family: 'Petrona', serif;
@@ -23,4 +23,5 @@
   --secondary-font-weight-regular: 400;
 
   --tertiary-font-weight-regular: 400;
+  --tertiary-font-weight-bold: 700;
 }

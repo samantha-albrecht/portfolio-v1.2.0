@@ -27,12 +27,17 @@ const variantsMapping = {
   footer: 'p',
 }
 
-const Typography = ({ variant, color, children, ...props }) => {
+const Typography = ({ variant, color, size, weight, children, ...props }) => {
   const Component = variant ? variantsMapping[variant] : 'p'
 
   return (
     <Component
-      className={cn(styles[`${variant}`], styles[`${color}`])}
+      className={cn(
+        styles[`${variant}`],
+        styles[`${color}`],
+        styles[`${size}`],
+        styles[`${weight}`]
+      )}
       {...props}
     >
       {children}

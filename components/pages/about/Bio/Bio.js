@@ -28,7 +28,13 @@ function Bio() {
               dressing&nbsp;up.
             </Typography>
           </div>
-          <div className={styles.imageWrapper}></div>
+          <div className={styles.imageWrapper}>
+            <img
+              src="/images/about/headshot.png"
+              alt="Image of Samantha"
+              className={styles.image}
+            />
+          </div>
         </div>
       </MainGrid>
     </div>

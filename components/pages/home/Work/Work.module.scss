@@ -52,6 +52,7 @@
 .descriptionLink {
   position: relative;
   width: fit-content;
+  font-weight: var(--tertiary-font-weight-bold);
   color: var(--secondary);
 
   &::after {

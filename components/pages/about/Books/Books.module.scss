@@ -49,5 +49,12 @@
 }
 
 .bookGroup {
+  display: grid;
+  row-gap: 1rem;
   padding: 1rem;
+}
+
+.bookCoverImage {
+  width: auto;
+  height: 220px;
 }

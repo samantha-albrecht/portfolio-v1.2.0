@@ -95,10 +95,6 @@ $breakpoint-xl: 1280px;
   line-height: 130%;
 }
 
-.bodySmall {
-  font-size: var(--font-size-s);
-}
-
 .footer {
   font-family: var(--secondary-font-family);
   font-weight: var(--secondary-font-weight-regular);
@@ -158,4 +154,17 @@ $breakpoint-xl: 1280px;
 
 .text3 {
   color: var(--text3);
+}
+
+.body-bold {
+  font-weight: var(--tertiary-font-weight-bold);
+}
+
+.medium {
+  font-size: var(--font-size-m);
+}
+
+.bodySmall,
+.small {
+  font-size: var(--font-size-s);
 }

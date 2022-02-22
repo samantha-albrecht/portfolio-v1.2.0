@@ -7,32 +7,27 @@ function BookTitles() {
     {
       title: 'Permission To Screw Up',
       author: 'Kristen Hadeed',
-      coverImage: '/img/books/permission-to-screw-up.jpg',
+      coverImage: '/images/books/permission-to-screw-up.jpg',
     },
     {
       title: 'Daring Greatly',
       author: 'Brene Brown',
-      coverImage: '/img/books/daring-greatly.jpg',
+      coverImage: '/images/books/daring-greatly.jpg',
     },
-    // {
-    //     title: 'Start With Why',
-    //     author: 'Simon Sinek',
-    //     coverImage: '/img/books/start-with-why.jpg',
-    // },
     {
       title: 'Leaders Eat Last',
       author: 'Simon Sinek',
-      coverImage: '/img/books/leaders-eat-last.jpg',
+      coverImage: '/images/books/leaders-eat-last.jpg',
     },
     {
       title: 'The Accidental Creative',
       author: 'Todd Henry',
-      coverImage: '/img/books/accidental-creative.jpg',
+      coverImage: '/images/books/accidental-creative.jpg',
     },
     {
       title: 'Quiet',
       author: 'Susan Cain',
-      coverImage: '/img/books/quiet.jpg',
+      coverImage: '/images/books/quiet.jpg',
     },
     // {
     //     title: 'Make Your Bed',
@@ -42,7 +37,7 @@ function BookTitles() {
     {
       title: "Man's Search For Meaning",
       author: 'Viktor E. Frankl',
-      coverImage: '/img/books/mans-search-for-meaning.jpg',
+      coverImage: '/images/books/mans-search-for-meaning.jpg',
     },
   ]
 
@@ -55,8 +50,10 @@ function BookTitles() {
             src={book.coverImage}
             alt={`Book cover image: ${book.title}`}
           />
-          <Typography variant="titleM">{book.title}</Typography>
-          <Typography variant="bodySmall">{book.author}</Typography>
+          <div className={styles.bookInfo}>
+            <Typography variant="titleM">{book.title}</Typography>
+            <Typography variant="bodySmall">{book.author}</Typography>
+          </div>
         </div>
       ))}
     </div>
@@ -79,7 +76,7 @@ function Books() {
               reading. I read because I crave new thoughts, ideas, and
               perspectives that inspire, teach, and challenge&nbsp;me.
             </Typography>
-            <Typography variant="body">
+            <Typography variant="titleM">
               These are a few of my favorites:
             </Typography>
           </div>
