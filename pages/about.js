@@ -1,4 +1,4 @@
-import AboutView from '@components/pages/about/About/AboutView'
+import AboutView from '@components/pages/about/AboutView/AboutView'
 import Head from 'next/head'
 
 export default function About() {

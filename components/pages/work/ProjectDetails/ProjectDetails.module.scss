@@ -1,0 +1,23 @@
+.projectDetailsWrapper {
+  display: grid;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.projectDetailsGroup {
+  display: grid;
+  row-gap: 0.5rem;
+  align-content: flex-start;
+  padding: 1.5rem 1rem;
+}
+
+.descriptionListItem {
+  font-size: var(--font-size-s);
+  margin: 0.25rem 0;
+}
