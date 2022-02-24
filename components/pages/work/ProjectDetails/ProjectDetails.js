@@ -7,23 +7,18 @@ function ProjectDetails({ currentPage }) {
     ami: {
       organization: 'CoSchedule',
       work: ['Design', 'Font-end development'],
-      languages: ['WordPress', 'PHP', 'HTML', 'SCSS', 'jQuery'],
+      languages: ['WordPress', 'PHP', 'HTML', 'CSS (SCSS)', 'jQuery'],
     },
     hs: {
       organization: 'CoSchedule',
       work: ['Design', 'Font-end development'],
-      languages: ['WordPress', 'PHP', 'HTML', 'SCSS', 'jQuery'],
+      languages: ['HTML', 'CSS (LESS)', 'jQuery'],
     },
   }
 
-  const getProjectDetailsContent = () => {
-    if (currentPage === 'ami') {
-      return projectDetailsContent.ami
-    }
-    return projectDetailsContent.home
-  }
-
-  const { organization, work, languages } = getProjectDetailsContent()
+  const org = projectDetailsContent[currentPage].organization
+  const workArray = projectDetailsContent[currentPage].work
+  const languagesArray = projectDetailsContent[currentPage].languages
 
   return (
     <section className={styles.projectDetailsWrapper}>
@@ -37,7 +32,7 @@ function ProjectDetails({ currentPage }) {
           <Typography variant="captionSmall">Organization</Typography>
         </div>
         <ul className={styles.projectDetailsList}>
-          <li className={styles.descriptionListItem}>{organization}</li>
+          <li className={styles.descriptionListItem}>{org}</li>
         </ul>
       </div>
       <div className={cn(styles.projectDetailsGroup, styles.descriptionWork)}>
@@ -45,11 +40,11 @@ function ProjectDetails({ currentPage }) {
           <Typography variant="captionSmall">Work</Typography>
         </div>
         <ul className={styles.projectDetailsList}>
-          {/* {projectDetailsContent.work.map((work) => (
-            <li className={styles.descriptionListItem}>{work}</li>
-          ))} */}
-          <li className={styles.descriptionListItem}>Design</li>
-          <li className={styles.descriptionListItem}>Front-end development</li>
+          {workArray.map((work, index) => (
+            <li key={index} className={styles.descriptionListItem}>
+              {work}
+            </li>
+          ))}
         </ul>
       </div>
       <div
@@ -59,13 +54,11 @@ function ProjectDetails({ currentPage }) {
           <Typography variant="captionSmall">Languages</Typography>
         </div>
         <ul className={styles.projectDetailsList}>
-          {/* {projectDetailsContent.languages.map((languages) => (
-            <li className={styles.descriptionListItem}>{languages}</li>
-          ))} */}
-          <li className={styles.descriptionListItem}>HTML</li>
-          <li className={styles.descriptionListItem}>PHP</li>
-          <li className={styles.descriptionListItem}>CSS (LESS)</li>
-          <li className={styles.descriptionListItem}>jQuery</li>
+          {languagesArray.map((languages, index) => (
+            <li key={index} className={styles.descriptionListItem}>
+              {languages}
+            </li>
+          ))}
         </ul>
       </div>
     </section>

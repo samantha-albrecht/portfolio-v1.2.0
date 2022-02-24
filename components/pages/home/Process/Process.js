@@ -8,7 +8,12 @@ function Process() {
       <div className={styles.innerWrapper}>
         <div className={styles.headingWrapper}>
           <Typography variant="caption">Process</Typography>
-          <Typography variant="title2xl">End-to-end design</Typography>
+          <Typography variant="h2" size="xxl" weight="h-bold">
+            End-to-end design
+          </Typography>
+          <Typography variant="p">
+            As a designer I’m involved in all parts of the project lifecycle:
+          </Typography>
         </div>
         <div className={styles.processGroup}>
           <svg
@@ -25,14 +30,16 @@ function Process() {
             <path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm-7 7H3v4c0 1.1.9 2 2 2h4v-2H5v-4zM5 5h4V3H5c-1.1 0-2 .9-2 2v4h2V5zm14-2h-4v2h4v4h2V5c0-1.1-.9-2-2-2zm0 16h-4v2h4c1.1 0 2-.9 2-2v-4h-2v4z"></path>
           </svg>
 
-          <Typography variant="titleL">Observe &amp; Define</Typography>
+          <Typography variant="h3" size="l">
+            Observe &amp; Define
+          </Typography>
           <div className={styles.processDescription}>
-            <Typography variant="body">
-              Understand how customers are using the product. And identify
-              opportunities for&nbsp;improvement.
+            <Typography variant="p">
+              Understanding how customers are using the product. And identifying
+              improvement opportunities.
             </Typography>
           </div>
-          <Typography variant="titleS">
+          <Typography variant="h4" size="s" weight="h-bold">
             Documentation tools I've used:
           </Typography>
           <ul className={styles.toolsList}>
@@ -60,14 +67,18 @@ function Process() {
             <circle cx="17.5" cy="11.5" r="1.5"></circle>
           </svg>
 
-          <Typography variant="titleL">Ideate &amp; Prototype</Typography>
+          <Typography variant="h3" size="l">
+            Ideate &amp; Prototype
+          </Typography>
           <div className={styles.processDescription}>
-            <Typography variant="body">
-              Explore possible solutions to challenge assumptions with
+            <Typography variant="p">
+              Exploring possible solutions to challenge assumptions with
               wireframes and design&nbsp;mockups.
             </Typography>
           </div>
-          <Typography variant="titleS">Design programs I've used:</Typography>
+          <Typography variant="h4" size="s" weight="h-bold">
+            Design programs I've used:
+          </Typography>
           <ul className={styles.toolsList}>
             <li className={styles.toolsListItem}>Balsamiq</li>
             <li className={styles.toolsListItem}>Sketch</li>
@@ -92,14 +103,18 @@ function Process() {
             </g>
           </svg>
 
-          <Typography variant="titleL">Build &amp; Launch</Typography>
+          <Typography variant="h3" size="l">
+            Build &amp; Launch
+          </Typography>
           <div className={styles.processDescription}>
-            <Typography variant="body">
-              Develop a minimum viable product to get in the hands
-              of&nbsp;customers.
+            <Typography variant="p">
+              Developing a minimum viable product to get in the hands of
+              prospects, leads, and&nbsp;customers.
             </Typography>
           </div>
-          <Typography variant="titleS">Coding languages I've used:</Typography>
+          <Typography variant="h4" size="s" weight="h-bold">
+            Coding languages I've used:
+          </Typography>
           <ul className={styles.toolsList}>
             <li className={styles.toolsListItem}>HTML</li>
             <li className={styles.toolsListItem}>CSS (SASS)</li>
@@ -124,14 +139,18 @@ function Process() {
             <path d="M7 12h2v5H7zM15 7h2v10h-2zM11 14h2v3h-2zM11 10h2v2h-2z"></path>
           </svg>
 
-          <Typography variant="titleL">Test &amp; Refine</Typography>
+          <Typography variant="h3" size="l">
+            Test &amp; Refine
+          </Typography>
           <div className={styles.processDescription}>
-            <Typography variant="body">
-              Gain insight and make improvements based on analytics and real
-              user&nbsp;interactions.
+            <Typography variant="p">
+              Gaining insight and making improvements based on analytics and
+              real user&nbsp;interactions.
             </Typography>
           </div>
-          <Typography variant="titleS">Tracking software I've used:</Typography>
+          <Typography variant="h4" size="s" weight="h-bold">
+            Tracking software I've used:
+          </Typography>
           <ul className={styles.toolsList}>
             <li className={styles.toolsListItem}>Google Analytics</li>
             <li className={styles.toolsListItem}>Google Search Console</li>

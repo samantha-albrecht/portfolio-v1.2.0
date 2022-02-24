@@ -23,6 +23,7 @@ function Footer() {
                   <a
                     href="https://www.linkedin.com/in/samantha-albrecht-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-998053156/"
                     title="Go to LinkedIn"
+                    rel="noopener noreferrer nofollow"
                     className={styles.socialLink}
                   >
                     <svg
@@ -41,6 +42,7 @@ function Footer() {
                   <a
                     href="https://github.com/samantha-albrecht/my-portfolio/tree/master"
                     title="View source on Github"
+                    rel="noopener noreferrer nofollow"
                     className={styles.socialLink}
                   >
                     <svg

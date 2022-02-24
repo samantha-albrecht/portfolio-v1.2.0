@@ -35,16 +35,15 @@
 .openQuote {
   position: absolute;
   z-index: -1;
-  top: 36px;
+  top: -16px;
   left: 16px;
   font-family: var(--primary-font-family);
   font-weight: var(--primary-font-weight-medium);
   font-size: 8.5rem;
+  line-height: 100%;
   color: var(--secondary);
 
   @media (min-width: 1024px) {
-    top: 50px;
-    left: 16px;
     font-size: 10rem;
   }
 }
@@ -59,4 +58,9 @@
   @media (min-width: 1024px) {
     grid-column: 3 / 5;
   }
+}
+
+.marginTop {
+  display: block;
+  margin-top: 1rem;
 }

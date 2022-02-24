@@ -1,7 +1,5 @@
 import Guides from '@components/foundation/Guides'
-import MainGrid from '@components/foundation/MainGrid'
 import MainWrapper from '@components/foundation/MainWrapper'
-import Typography from '@components/foundation/Typography'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import styles from './Header.module.scss'
@@ -53,7 +51,6 @@ function Header() {
             <div className={styles.guideLayout}>
               <Guides />
             </div>
-            {/* <MainGrid> */}
             <div
               className={cn(styles.header, {
                 [styles.visible]: headerState === 'show',
@@ -62,11 +59,11 @@ function Header() {
               })}
             >
               <div className={styles.innerWrapper}>
-                <Typography variant="navH1">
+                <div className={cn(styles.navItem, styles.siteTitle)}>
                   <Link href="/">
-                    <a>Samantha Albrecht</a>
+                    <a title="Go to home page">Samantha Albrecht</a>
                   </Link>
-                </Typography>
+                </div>
                 <button
                   className={styles.navOpen}
                   onClick={navToggle}
@@ -116,6 +113,7 @@ function Header() {
                         <a
                           href="https://www.linkedin.com/in/samantha-albrecht-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-998053156/"
                           title="Contact me on LinkedIn"
+                          rel="noopener noreferrer nofollow"
                         >
                           Contact
                         </a>
@@ -144,7 +142,6 @@ function Header() {
                 <Overlay show={showHeader} onClick={navToggle} />
               </div>
             </div>
-            {/* </MainGrid> */}
           </div>
         </MainWrapper>
       </header>

@@ -1,12 +1,12 @@
 import PageWrapper from '@components/foundation/PageWrapper'
 import MainGrid from '@components/foundation/MainGrid'
-import styles from './HeadlineStudioView.module.scss'
+import styles from './WorkViews.module.scss'
 import cn from 'classnames'
 import Typography from '@components/foundation/Typography'
 import Aside from '../Aside'
 import ProjectDetails from '../ProjectDetails'
 
-function HeadlineStudioView() {
+function ActionableMarketingInstituteView() {
   return (
     <PageWrapper>
       <MainGrid>
@@ -18,7 +18,7 @@ function HeadlineStudioView() {
             <Typography variant="caption">
               Actionable Marketing Institute powered by CoSchedule
             </Typography>
-            <Typography variant="h1" size="xxl">
+            <Typography variant="h1" size="xxl" weight="h-bold">
               Online Marketing Course Pages
             </Typography>
           </div>
@@ -31,7 +31,7 @@ function HeadlineStudioView() {
               height={455}
             />
             <div id="problem" className={styles.sectionTitle}>
-              <Typography variant="h2" size="xl">
+              <Typography variant="h2" size="xl" weight="h-bold">
                 Problem
               </Typography>
             </div>
@@ -54,15 +54,13 @@ function HeadlineStudioView() {
               user-friendly and position it as the best value we built a new AMI
               homepage and individual course&nbsp;pages.
             </p>
-            <p className={styles.projectBodyParagraph}>
-              <em>
-                *Teachable is an all-in-one platform that helps you create and
-                sell course&nbsp;online.
-              </em>
+            <p className={cn(styles.projectBodyParagraph, styles.italic)}>
+              *Teachable is an all-in-one platform that helps you create and
+              sell course&nbsp;online.
             </p>
 
             <div id="challenges" className={styles.sectionTitle}>
-              <Typography variant="h2" size="xl">
+              <Typography variant="h2" size="xl" weight="h-bold">
                 Challenges
               </Typography>
             </div>
@@ -85,11 +83,15 @@ function HeadlineStudioView() {
             </p>
 
             <div id="process" className={styles.sectionTitle}>
-              <Typography variant="h2" size="xl">
+              <Typography variant="h2" size="xl" weight="h-bold">
                 Process
               </Typography>
             </div>
-            <h3 className={styles.projectBodySubTitleLg}>Research</h3>
+            <div id="process" className={styles.projectBodySubTitleLg}>
+              <Typography variant="h3" size="l">
+                Research
+              </Typography>
+            </div>
             <p className={styles.projectBodyParagraph}>
               The first step was to figure out the challenge presented by
               Teachable. I had never used Teachable before so I started by
@@ -105,9 +107,10 @@ function HeadlineStudioView() {
             <p className={styles.projectBodyParagraph}>
               I found the page builder was extremely limiting. I could include
               custom code snippets, but I would have to build them outside of
-              Teachable and then drop them in as one <em>long</em> line of code,
-              inline styles and all. What a nightmare to troubleshoot! And most
-              course pages looked the same, not what we were going&nbsp;for.
+              Teachable and then drop them in as one{' '}
+              <span className={styles.italic}>long</span> line of code, inline
+              styles and all. What a nightmare to troubleshoot! And most course
+              pages looked the same, not what we were going&nbsp;for.
             </p>
             <p className={styles.projectBodyParagraph}>
               Knowing that we’d have to hand-code the elements to incorporate
@@ -142,35 +145,43 @@ function HeadlineStudioView() {
               For the course pages I looked at the same websites, but was
               interested in the individual course&nbsp;details.
             </p>
-            <h3 className={styles.projectBodySubTitleLg}>Wireframe</h3>
-            <h4 className={styles.projectBodySubTitleMd}>Course Pages</h4>
+            <div id="process" className={styles.projectBodySubTitleLg}>
+              <Typography variant="h3" size="l">
+                Wireframes
+              </Typography>
+            </div>
+            <div id="process" className={styles.projectBodySubTitleMd}>
+              <Typography variant="h4" size="m" weight="h-bold">
+                Course Pages
+              </Typography>
+            </div>
             <p className={styles.projectBodyParagraph}>
               There are a few key areas I focused on while wireframing: the hero
               section, the lessons, and the plan&nbsp;comparison
             </p>
             <p className={styles.projectBodyParagraph}>
-              <strong>Hero &#8211;</strong> To give prospective students a quick
-              course snapshot I included a few course details including course
-              level, course category, est. time to complete, number of lessons,
-              and number of&nbsp;resources.
+              <span className={styles.strong}>Hero &#8211;</span> To give
+              prospective students a quick course snapshot I included a few
+              course details including course level, course category, est. time
+              to complete, number of lessons, and number of&nbsp;resources.
             </p>
             <img
               className={styles.imageContainer}
-              src="/img/work/actionable-marketing-institute/project-screenshots-ami-course-details.png"
+              src="/images/work/ami/project-screenshots-ami-course-details.png"
               alt="AMI Course details wireframe."
               width={1080}
               height={550}
               loading="lazy"
             />
             <p className={styles.projectBodyParagraph}>
-              <strong>Lessons &#8211;</strong> I played around with various
-              lesson layouts including a condensed list with a video preview
-              compared to an expanded list with a short description for
-              each&nbsp;lesson.
+              <span className={styles.strong}>Lessons &#8211;</span> I played
+              around with various lesson layouts including a condensed list with
+              a video preview compared to an expanded list with a short
+              description for each&nbsp;lesson.
             </p>
             <img
               className={styles.imageContainer}
-              src="/img/work/actionable-marketing-institute/project-screenshots-ami-lessons-1.png"
+              src="/images/work/ami/project-screenshots-ami-lessons-1.png"
               alt="AMI Course lessons wireframe."
               layout="responsive"
               width={810}
@@ -178,20 +189,24 @@ function HeadlineStudioView() {
               loading="lazy"
             />
             <p className={styles.projectBodyParagraph}>
-              <strong>Plan comparison &#8211;</strong> We wanted to emphasize
-              the value of purchasing AMI Pro which includes all courses vs
-              purchasing a single course. I chose a two column layout to compare
-              plans side by&nbsp;side.
+              <span className={styles.strong}>Plan comparison &#8211;</span> We
+              wanted to emphasize the value of purchasing AMI Pro which includes
+              all courses vs purchasing a single course. I chose a two column
+              layout to compare plans side by&nbsp;side.
             </p>
             <img
               className={styles.imageContainer}
-              src="/img/work/actionable-marketing-institute/project-screenshots-ami-plan-comparison.png"
+              src="/images/work/ami/project-screenshots-ami-plan-comparison.png"
               alt="Sticky sign up form wireframe."
               width={810}
               height={604}
               loading="lazy"
             />
-            <h4 className={styles.projectBodySubTitleMd}>Homepage</h4>
+            <div id="process" className={styles.projectBodySubTitleMd}>
+              <Typography variant="h4" size="m" weight="h-bold">
+                Homepage
+              </Typography>
+            </div>
             <p className={styles.projectBodyParagraph}>
               Originally we were going to build a course catalog and a homepage.
               Through the wireframing process it became clear how similar the
@@ -201,16 +216,16 @@ function HeadlineStudioView() {
               the&nbsp;homepage.
             </p>
             <p className={styles.projectBodyParagraph}>
-              <strong>Course catalog &#8211;</strong> First I explored how to
-              display the course cards, comparing the pros and cons of showing
-              all courses like a library or condensing them into a carousel. The
-              carousel allows users to look through the courses without
-              completely taking over the&nbsp;page.
+              <span className={styles.strong}>Course catalog &#8211;</span>{' '}
+              First I explored how to display the course cards, comparing the
+              pros and cons of showing all courses like a library or condensing
+              them into a carousel. The carousel allows users to look through
+              the courses without completely taking over the&nbsp;page.
             </p>
             <img
               className={styles.imageContainer}
               className={styles.imageContainer}
-              src="/img/work/actionable-marketing-institute/project-screenshots-ami-course-categories.png"
+              src="/images/work/ami/project-screenshots-ami-course-categories.png"
               alt="AMI Pro course categories wireframe."
               width={810}
               height={731}
@@ -222,7 +237,7 @@ function HeadlineStudioView() {
             </p>
             <img
               className={styles.imageContainer}
-              src="/img/work/actionable-marketing-institute/project-screenshots-ami-course-carousel-1.png"
+              src="/images/work/ami/project-screenshots-ami-course-carousel-1.png"
               alt="AMI Pro course carousel wireframe."
               width={810}
               height={521}
@@ -239,7 +254,11 @@ function HeadlineStudioView() {
               certification if&nbsp;applicable.
             </p>
 
-            <h3 className={styles.projectBodySubTitleLg}>Design</h3>
+            <div id="process" className={styles.projectBodySubTitleLg}>
+              <Typography variant="h3" size="l">
+                Design
+              </Typography>
+            </div>
             <p className={styles.projectBodyParagraph}>
               As I mentioned earlier, Actionable Marketing Institute was
               formerly CoSchedule Academy. Along with a new name AMI got a new
@@ -254,13 +273,18 @@ function HeadlineStudioView() {
             </p>
             <img
               className={styles.imageContainer}
-              src="/img/work/actionable-marketing-institute/project-screenshots-ami-graphics.png"
+              src="/images/work/ami/project-screenshots-ami-graphics.png"
               alt="Custom illustrations for Actionable Marketing Institute Courses."
               width={810}
               height={409}
               loading="lazy"
             />
-            <h3 className={styles.projectBodySubTitleLg}>Build</h3>
+
+            <div id="process" className={styles.projectBodySubTitleLg}>
+              <Typography variant="h3" size="l">
+                Build
+              </Typography>
+            </div>
             <p className={styles.projectBodyParagraph}>
               An important requirement of this project was to give the marketing
               team complete control over the page content to update as needed,
@@ -296,7 +320,7 @@ function HeadlineStudioView() {
             </ul>
             <img
               className={styles.imageContainer}
-              src="/img/work/actionable-marketing-institute/project-screenshots-ami-course-carousel-2.png"
+              src="/images/work/ami/project-screenshots-ami-course-carousel-2.png"
               alt="AMI Pro course carousel."
               width={810}
               height={460}
@@ -304,7 +328,7 @@ function HeadlineStudioView() {
             />
 
             <div id="outcomes" className={styles.sectionTitle}>
-              <Typography variant="h2" size="xl">
+              <Typography variant="h2" size="xl" weight="h-bold">
                 Outcomes
               </Typography>
             </div>
@@ -325,4 +349,4 @@ function HeadlineStudioView() {
   )
 }
 
-export default HeadlineStudioView
+export default ActionableMarketingInstituteView

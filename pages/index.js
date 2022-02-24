@@ -8,6 +8,14 @@ export default function Index() {
         <title>
           Samantha Albrecht | Designer, developer, creative problem solver
         </title>
+        <meta name="description" content="" />
+        <meta name="robots" content="noindex" />
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://www.samanthaalbrecht.com"
+        />
+        <link rel="canonical" href="https://www.samanthaalbrecht.com" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Home />

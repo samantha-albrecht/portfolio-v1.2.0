@@ -30,9 +30,14 @@ function Cta({ currentPage }) {
   return (
     <MainGrid color="dkBackground">
       <div className={styles.innerWrapper}>
-        <Typography variant="title3xl" color="text3">
+        <Typography variant="h2" size="xxxl" color="text3" weight="h-bold">
           {text}
-          <a href={href} title={title} className={styles.link}>
+          <a
+            href={href}
+            title={title}
+            rel="noopener noreferrer nofollow"
+            className={styles.link}
+          >
             {linkText}
           </a>
         </Typography>

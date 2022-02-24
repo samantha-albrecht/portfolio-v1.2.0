@@ -1,110 +1,23 @@
-$breakpoint-s: 640px;
-$breakpoint-m: 768px;
-$breakpoint-l: 1024px;
-$breakpoint-xl: 1280px;
-
-.navH1 {
-  font-family: var(--secondary-font-family);
-  font-weight: var(--secondary-font-weight-regular);
-  font-size: 1.1rem;
-  color: var(--text2);
-}
-
 .title4xl {
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-2xl);
   font-family: var(--primary-font-family);
   font-weight: var(--primary-font-weight-extra-bold);
   letter-spacing: -1px;
   line-height: 120%;
 
-  @media (min-width: $breakpoint-l) {
-    font-size: var(--font-size-4xl);
-  }
-}
-
-.title3xl {
-  font-size: var(--font-size-2xl);
-  font-family: var(--primary-font-family);
-  font-weight: var(--primary-font-weight-bold);
-  letter-spacing: -1px;
-  line-height: 130%;
-
-  @media (min-width: $breakpoint-m) {
+  @media (min-width: 768px) {
     font-size: var(--font-size-3xl);
   }
-}
 
-.title2xl {
-  font-size: var(--font-size-xl);
-  font-family: var(--primary-font-family);
-  font-weight: var(--primary-font-weight-bold);
-  letter-spacing: -1px;
-  line-height: 130%;
-
-  @media (min-width: $breakpoint-m) {
-    font-size: var(--font-size-2xl);
+  @media (min-width: 1024px) {
+    font-size: var(--font-size-4xl);
   }
-}
-
-.titleXl {
-  font-size: var(--font-size-l);
-  font-family: var(--primary-font-family);
-  font-weight: var(--primary-font-weight-medium);
-  letter-spacing: -1px;
-  line-height: 130%;
-
-  @media (min-width: $breakpoint-m) {
-    font-size: var(--font-size-xl);
-  }
-}
-
-.titleL {
-  font-size: var(--font-size-m);
-  font-family: var(--primary-font-family);
-  font-weight: var(--primary-font-weight-medium);
-  line-height: 130%;
-
-  @media (min-width: $breakpoint-m) {
-    font-size: var(--font-size-l);
-  }
-}
-
-.titleM {
-  font-size: var(--font-size-m);
-  font-family: var(--primary-font-family);
-  font-weight: var(--primary-font-weight-bold);
-  letter-spacing: -0.5px;
-  line-height: 130%;
-}
-
-.titleS {
-  font-size: var(--font-size-xs);
-  font-family: var(--primary-font-family);
-  font-weight: var(--primary-font-weight-bold);
-  line-height: 130%;
-
-  @media (min-width: $breakpoint-m) {
-    font-size: var(--font-size-s);
-  }
-}
-
-.titleXs {
-  font-size: var(--font-size-xs);
-  font-family: var(--primary-font-family);
-  font-weight: var(--primary-font-weight-medium);
-  line-height: 130%;
-}
-
-.footer {
-  font-family: var(--secondary-font-family);
-  font-weight: var(--secondary-font-weight-regular);
-  font-size: var(--font-size-s);
 }
 
 .caption {
   font-family: var(--secondary-font-family);
   font-weight: var(--secondary-font-weight-regular);
-  font-size: var(--font-size-ms);
+  font-size: var(--font-size-m);
   line-height: 130%;
   position: relative;
   color: var(--text2);
@@ -152,6 +65,12 @@ $breakpoint-xl: 1280px;
   }
 }
 
+.footer {
+  font-family: var(--secondary-font-family);
+  font-weight: var(--secondary-font-weight-regular);
+  font-size: var(--font-size-s);
+}
+
 .h1,
 .h2,
 .h3,
@@ -159,8 +78,8 @@ $breakpoint-xl: 1280px;
 .h5,
 .h6 {
   font-family: var(--primary-font-family);
-  font-weight: var(--primary-font-weight-bold);
-  letter-spacing: -1px;
+  font-weight: var(--primary-font-weight-medium);
+  letter-spacing: -0.5px;
   line-height: 130%;
 }
 
@@ -168,7 +87,11 @@ $breakpoint-xl: 1280px;
   color: var(--text3);
 }
 
-.body-bold {
+.h-bold {
+  font-weight: var(--primary-font-weight-bold);
+}
+
+.p-bold {
   font-weight: var(--tertiary-font-weight-bold);
 }
 
@@ -177,7 +100,11 @@ $breakpoint-xl: 1280px;
 }
 
 .xxxl {
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-2xl);
+
+  @media (min-width: 1024px) {
+    font-size: var(--font-size-3xl);
+  }
 }
 
 .xxl {
@@ -192,11 +119,10 @@ $breakpoint-xl: 1280px;
   font-size: var(--font-size-l);
 }
 
-.medium {
+.m {
   font-size: var(--font-size-m);
 }
 
-.bodySmall,
-.small {
+.s {
   font-size: var(--font-size-s);
 }

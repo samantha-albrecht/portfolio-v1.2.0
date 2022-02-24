@@ -106,6 +106,10 @@
   width: fit-content;
   color: var(--text2);
 
+  &.siteTitle {
+    margin: 0;
+  }
+
   &::after {
     content: '';
     position: absolute;

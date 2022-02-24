@@ -71,8 +71,10 @@
 .descriptionLink {
   position: relative;
   width: fit-content;
-  font-weight: var(--tertiary-font-weight-bold);
-  color: var(--secondary);
+  font-family: var(--secondary-font-family);
+  font-weight: var(--secondary-font-weight-regular);
+  line-height: 180%;
+  color: var(--text2);
 
   &::after {
     content: '';
@@ -82,7 +84,7 @@
     transition: all 0.3s ease-in-out;
     height: 2px;
     width: 0;
-    background-color: var(--secondary);
+    background-color: var(--text2);
   }
 
   &:hover::after {

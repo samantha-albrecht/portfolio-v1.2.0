@@ -51,8 +51,12 @@ function BookTitles() {
             alt={`Book cover image: ${book.title}`}
           />
           <div className={styles.bookInfo}>
-            <Typography variant="titleM">{book.title}</Typography>
-            <Typography variant="bodySmall">{book.author}</Typography>
+            <Typography variant="p" weight="p-bold">
+              {book.title}
+            </Typography>
+            <Typography variant="p" size="s">
+              {book.author}
+            </Typography>
           </div>
         </div>
       ))}
@@ -67,16 +71,18 @@ function Books() {
         <div className={styles.innerWrapper}>
           <div className={styles.headingWrapper}>
             <Typography variant="caption">Books</Typography>
-            <Typography variant="title2xl">Good reads</Typography>
+            <Typography variant="h2" size="xxl" weight="h-bold">
+              Good reads
+            </Typography>
           </div>
           <div className={styles.bodyWrapper}>
-            <Typography variant="body">
+            <Typography variant="p">
               I haven’t always been an avid reader, but in the last two years
               I've gained a new appreciation for books and developed a love for
               reading. I read because I crave new thoughts, ideas, and
               perspectives that inspire, teach, and challenge&nbsp;me.
             </Typography>
-            <Typography variant="titleM">
+            <Typography variant="p" weight="p-bold">
               These are a few of my favorites:
             </Typography>
           </div>

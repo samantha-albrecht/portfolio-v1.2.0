@@ -5,7 +5,9 @@ function Aside() {
   return (
     <aside>
       <div className={styles.asideTitle}>
-        <Typography variant="titleS">Jump to section:</Typography>
+        <Typography variant="p" size="s" weight="p-bold">
+          Jump to section:
+        </Typography>
       </div>
       <ul>
         <li>

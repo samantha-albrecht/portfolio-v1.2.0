@@ -1,11 +1,11 @@
-import HeadlineStudioView from '@components/pages/work/WorkViews/HeadlineStudioView'
+import ActionableMarketingInstituteView from '@components/pages/work/WorkViews/ActionableMarketingInstituteView'
 import Head from 'next/head'
 
-export default function HeadlineStudio() {
+export default function ActionableMarketingInstitute() {
   return (
     <>
       <Head>
-        <title>Samantha Albrecht | Work - Headline Studio</title>
+        <title>Samantha Albrecht | Work - Actionable Marketing Institute</title>
         <meta name="description" content="" />
         <meta name="robots" content="noindex" />
         <link
@@ -15,11 +15,11 @@ export default function HeadlineStudio() {
         />
         <link
           rel="canonical"
-          href="https://www.samanthaalbrecht.com/work/headline-studio"
+          href="https://www.samanthaalbrecht.com/work/actionable-marketing-institute"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HeadlineStudioView />
+      <ActionableMarketingInstituteView />
     </>
   )
 }

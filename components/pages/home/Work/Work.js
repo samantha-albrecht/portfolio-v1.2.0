@@ -77,12 +77,10 @@ function Project() {
                     </svg>
                   </a>
                 </div>
-                <Typography variant="titleXl">
+                <Typography variant="h3" size="xl">
                   {project.descriptionTitle}
                 </Typography>
-                <Typography variant="body">
-                  {project.descriptionBody}
-                </Typography>
+                <Typography variant="p">{project.descriptionBody}</Typography>
                 <Link href={project.projectUrl}>
                   <a className={styles.descriptionLink}>Learn more</a>
                 </Link>
@@ -102,7 +100,9 @@ function Work() {
         <div className={styles.innerWrapper}>
           <div className={styles.headingWrapper}>
             <Typography variant="caption">Work</Typography>
-            <Typography variant="title2xl">Recent Projects</Typography>
+            <Typography variant="h2" size="xxl" weight="h-bold">
+              Recent Projects
+            </Typography>
           </div>
         </div>
       </MainGrid>

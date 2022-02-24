@@ -8,7 +8,7 @@ function Quote() {
       <div className={styles.innerWrapper}>
         <div className={styles.quote}>
           <p className={styles.openQuote}>&#8220;</p>
-          <Typography variant="title3xl">
+          <Typography variant="h2" size="xxxl" weight="h-bold">
             All Creativity requires the willingness to fail.
           </Typography>
         </div>
@@ -19,6 +19,11 @@ function Quote() {
             failure is an option. It's inevitable. Failure allows us to learn,
             grow, and make better decisions in the future. We must be willing to
             fail again and again in order to&nbsp;succeed.
+            <br></br>
+            <span className={styles.marginTop}>
+              My portfolio highlights the successes that wouldn't have come
+              without&nbsp;failure.
+            </span>
           </Typography>
         </div>
       </div>

@@ -8,7 +8,9 @@ function Experience() {
       <div className={styles.innerWrapper}>
         <div className={styles.headingWrapper}>
           <Typography variant="caption">Experience</Typography>
-          <Typography variant="title2xl">Where I've worked</Typography>
+          <Typography variant="h2" size="xxl" weight="h-bold">
+            Where I've worked
+          </Typography>
         </div>
         <div className={styles.bodyWrapper}>
           <div className={styles.companyGroup}>
@@ -28,35 +30,37 @@ function Experience() {
                 />
               </svg>
               <div className={styles.companyName}>
-                <Typography variant="titleM">CoSchedule</Typography>
-                <Typography variant="body" size="small">
+                <Typography variant="h3" size="m" weight="h-bold">
+                  CoSchedule
+                </Typography>
+                <Typography variant="p" size="s">
                   2 years, 11 months
                 </Typography>
               </div>
             </div>
             <div className={styles.roleGroup}>
               <div className={styles.role}>
-                <Typography variant="body" size="medium" weight="body-bold">
+                <Typography variant="p" size="m" weight="p-bold">
                   Web designer
                 </Typography>
-                <Typography variant="body" size="small">
+                <Typography variant="p" size="s">
                   April 2021 - Present
                 </Typography>
               </div>
               <div className={styles.role}>
-                <Typography variant="body" size="medium" weight="body-bold">
+                <Typography variant="p" size="m" weight="p-bold">
                   Junior web designer
                 </Typography>
-                <Typography variant="body" size="small">
+                <Typography variant="p" size="s">
                   April 2020 - April 2021
                 </Typography>
               </div>
               <div className={styles.role}>
-                <Typography variant="body" size="medium" weight="body-bold">
+                <Typography variant="p" size="m" weight="p-bold">
                   Graphic design intern
                 </Typography>
-                <Typography variant="body" size="small">
-                  March 2019 - April 2020
+                <Typography variant="p" size="s">
+                  April 2019 - April 2020
                 </Typography>
               </div>
             </div>
@@ -86,18 +90,20 @@ function Experience() {
                 />
               </svg>
               <div className={styles.companyName}>
-                <Typography variant="titleM">Dynamic Communities</Typography>
-                <Typography variant="body" size="small">
+                <Typography variant="h3" size="m" weight="h-bold">
+                  Dynamic Communities
+                </Typography>
+                <Typography variant="p" size="s">
                   1 years, 2 months
                 </Typography>
               </div>
             </div>
             <div className={styles.roleGroup}>
               <div className={styles.role}>
-                <Typography variant="body" size="medium" weight="body-bold">
+                <Typography variant="p" size="m" weight="p-bold">
                   Marketing intern
                 </Typography>
-                <Typography variant="body" size="small">
+                <Typography variant="p" size="s">
                   January 2018 - March 2019
                 </Typography>
               </div>
