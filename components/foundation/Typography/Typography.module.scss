@@ -1,0 +1,128 @@
+.title4xl {
+  font-size: var(--font-size-2xl);
+  font-family: var(--primary-font-family);
+  font-weight: var(--primary-font-weight-extra-bold);
+  letter-spacing: -1px;
+  line-height: 120%;
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-3xl);
+  }
+
+  @media (min-width: 1024px) {
+    font-size: var(--font-size-4xl);
+  }
+}
+
+.caption {
+  font-family: var(--secondary-font-family);
+  font-weight: var(--secondary-font-weight-regular);
+  font-size: var(--font-size-m);
+  line-height: 130%;
+  position: relative;
+  color: var(--text2);
+
+  &::before {
+    content: '';
+    display: block;
+    width: 1.5px;
+    background-color: var(--text2);
+    top: 2px;
+    left: -16px;
+    height: 16px;
+    position: absolute;
+  }
+}
+
+.captionSmall {
+  font-family: var(--secondary-font-family);
+  font-weight: var(--secondary-font-weight-regular);
+  font-size: var(--font-size-s);
+  line-height: 130%;
+  color: var(--text2);
+}
+
+.byline {
+  padding-left: 28px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 1px;
+    left: 0;
+    top: 12px;
+    background-color: var(--text2);
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 48px;
+
+    &::before {
+      width: 40px;
+    }
+  }
+}
+
+.footer {
+  font-family: var(--secondary-font-family);
+  font-weight: var(--secondary-font-weight-regular);
+  font-size: var(--font-size-s);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--primary-font-family);
+  font-weight: var(--primary-font-weight-medium);
+  letter-spacing: -0.5px;
+  line-height: 130%;
+}
+
+.text3 {
+  color: var(--text3);
+}
+
+.h-bold {
+  font-weight: var(--primary-font-weight-bold);
+}
+
+.p-bold {
+  font-weight: var(--tertiary-font-weight-bold);
+}
+
+.xxxxl {
+  font-size: var(--font-size-4xl);
+}
+
+.xxxl {
+  font-size: var(--font-size-2xl);
+
+  @media (min-width: 1024px) {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+.xxl {
+  font-size: var(--font-size-2xl);
+}
+
+.xl {
+  font-size: var(--font-size-xl);
+}
+
+.l {
+  font-size: var(--font-size-l);
+}
+
+.m {
+  font-size: var(--font-size-m);
+}
+
+.s {
+  font-size: var(--font-size-s);
+}

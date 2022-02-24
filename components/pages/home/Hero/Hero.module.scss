@@ -1,0 +1,30 @@
+.innerWrapper {
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  row-gap: 1rem;
+  padding: 9rem 0 8rem;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 12rem 0 10rem;
+  }
+}
+
+.caption,
+.title,
+.byline {
+  padding: 0 1rem;
+}
+
+.caption,
+.title {
+  @media (min-width: 1024px) {
+    grid-column: 1 / 5;
+  }
+}
+
+.byline {
+  @media (min-width: 1024px) {
+    grid-column: 1 / 4;
+  }
+}

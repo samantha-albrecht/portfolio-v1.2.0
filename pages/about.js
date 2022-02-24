@@ -1,13 +1,11 @@
-import Home from '@components/pages/home/Home/Home'
+import AboutView from '@components/pages/about/AboutView/AboutView'
 import Head from 'next/head'
 
-export default function Index() {
+export default function About() {
   return (
     <>
       <Head>
-        <title>
-          Samantha Albrecht | Designer, developer, creative problem solver
-        </title>
+        <title>Samantha Albrecht | About</title>
         <meta name="description" content="" />
         <meta name="robots" content="noindex" />
         <link
@@ -15,10 +13,10 @@ export default function Index() {
           hreflang="en"
           href="https://www.samanthaalbrecht.com"
         />
-        <link rel="canonical" href="https://www.samanthaalbrecht.com" />
+        <link rel="canonical" href="https://www.samanthaalbrecht.com/about" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Home />
+      <AboutView />
     </>
   )
 }

@@ -1,0 +1,7 @@
+.mainWrapper {
+  background-color: var(--body-background-color);
+
+  @media (min-width: 768px) {
+    padding: 0 16px;
+  }
+}

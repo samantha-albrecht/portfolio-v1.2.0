@@ -1,0 +1,31 @@
+.mainGrid {
+  display: grid;
+  grid-template-columns: 15px minmax(100px, 960px) 15px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 30px minmax(100px, 960px) 30px;
+    border-radius: 12px;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: auto minmax(100px, 960px) auto;
+  }
+
+  @media (min-width: 1280px) {
+    grid-template-columns: auto minmax(100px, 1080px) auto;
+  }
+}
+
+.whiteBackground {
+  box-shadow: var(--lt-box-shadow);
+  background-color: white;
+}
+
+.ltBackground {
+  background-color: var(--lt-card-background-color);
+}
+
+.dkBackground {
+  box-shadow: var(--dk-box-shadow);
+  background-color: var(--dk-card-background-color);
+}

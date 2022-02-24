@@ -1,0 +1,16 @@
+.asideTitle {
+  padding: 0.25rem 1rem;
+}
+
+.asideItem {
+  display: block;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+  font-size: var(--font-size-s);
+  margin: 0 1rem;
+  padding: 0.25rem 1rem;
+
+  &:hover {
+    background-color: var(--lt-card-background-color);
+  }
+}

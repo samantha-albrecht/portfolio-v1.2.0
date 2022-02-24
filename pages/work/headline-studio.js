@@ -1,13 +1,11 @@
-import Home from '@components/pages/home/Home/Home'
+import HeadlineStudioView from '@components/pages/work/WorkViews/HeadlineStudioView'
 import Head from 'next/head'
 
-export default function Index() {
+export default function HeadlineStudio() {
   return (
     <>
       <Head>
-        <title>
-          Samantha Albrecht | Designer, developer, creative problem solver
-        </title>
+        <title>Samantha Albrecht | Work - Headline Studio</title>
         <meta name="description" content="" />
         <meta name="robots" content="noindex" />
         <link
@@ -15,10 +13,13 @@ export default function Index() {
           hreflang="en"
           href="https://www.samanthaalbrecht.com"
         />
-        <link rel="canonical" href="https://www.samanthaalbrecht.com" />
+        <link
+          rel="canonical"
+          href="https://www.samanthaalbrecht.com/work/headline-studio"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Home />
+      <HeadlineStudioView />
     </>
   )
 }

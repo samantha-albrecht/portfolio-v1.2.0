@@ -1,0 +1,27 @@
+@import './_color-variables.css';
+@import './_typography-variables.css';
+
+:root {
+  --text1: #1d2b36;
+  --text2: #2f6652;
+  --text3: #fffbf9;
+
+  --primary: #2f6652;
+  --primary-rgb: rgb(47, 102, 82);
+  --secondary: #f38879;
+  --secondary-rgb: rgb(243, 136, 121);
+  --tertiary: #cdac92;
+  --tertiary-rgb: rgb(205, 172, 121);
+
+  --body-background-color: rgba(205, 172, 121, 0.05);
+  --nav-background-color: rgba(253, 251, 250, 0.95);
+  --button-background-color: var(--primary);
+  --lt-card-background-color: rgba(205, 172, 121, 0.2);
+  --dk-card-background-color: var(--primary);
+
+  --guide-color: rgba(205, 172, 121, 0.8);
+
+  --nav-box-shadow: 0px 3px 8px 0px rgba(213, 177, 153, 0.2);
+  --lt-box-shadow: 5px 10px 25px 4px rgba(213, 177, 153, 0.2);
+  --dk-box-shadow: 5px 10px 25px 4px rgba(3, 65, 52, 0.2);
+}
