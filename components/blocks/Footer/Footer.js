@@ -40,7 +40,7 @@ function Footer() {
                     </svg>
                   </a>
                   <a
-                    href="https://github.com/samantha-albrecht/my-portfolio/tree/master"
+                    href="https://github.com/samantha-albrecht/portfolio-v1.2.0"
                     title="View source on Github"
                     rel="noopener noreferrer nofollow"
                     className={styles.socialLink}
