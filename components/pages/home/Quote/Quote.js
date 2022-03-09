@@ -14,11 +14,12 @@ function Quote() {
         </div>
         <div className={styles.byline}>
           <Typography variant="byline">
-            This quote changed the direction of my career. Growing up I thought
-            failure was not an options. This quote opened my mind to see that
-            failure is an option. It's inevitable. Failure allows us to learn,
-            grow, and make better decisions in the future. We must be willing to
-            fail again and again in order to&nbsp;succeed.
+            Growing up I thought failure was not an option. Success to me was
+            straight A’s and a 4.0 GPA. This quote opened my mind to see that
+            failure is an option, it's inevitable as a creative. Design and
+            development require the willingness to try something new knowing it
+            could fail in order to learn, grow, and eventually
+            find&nbsp;success.
             <br></br>
             <span className={styles.marginTop}>
               My portfolio highlights the successes that wouldn't have come
