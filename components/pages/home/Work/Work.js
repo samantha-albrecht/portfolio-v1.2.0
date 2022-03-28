@@ -12,7 +12,7 @@ function Project() {
         'Actionable Marketing Institute powered by CoSchedule',
       descriptionTitle: 'Online Marketing Course Pages',
       descriptionBody:
-        'The challenge: create engaging, user friendly, customizable web pages to refresh & renew the AMI product line.',
+        'The challenge: create engaging, user friendly, customizable web pages to elevate the Actionable Marketing Institute.',
       projectUrl: '/work/actionable-marketing-institute',
       url: 'https://coschedule.com/actionable-marketing-institute/ami-pro',
       urlTitle: 'Go to the Actionable Marketing Institute',

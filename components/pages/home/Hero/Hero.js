@@ -16,9 +16,8 @@ function Hero() {
         </div>
         <div className={styles.byline}>
           <Typography variant="byline">
-            I work in the space between design and front-end development. I love
-            playing with the latest CSS, HTML, and Javascript, but also have an
-            eye for layout and design.
+            I solve complex problems with intuitive design solutions to deliver
+            user-friendly web experiences that produce business&nbsp;results.
           </Typography>
         </div>
       </div>
