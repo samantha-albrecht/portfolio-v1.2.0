@@ -12,7 +12,7 @@ function Process() {
             End-to-end design
           </Typography>
           <Typography variant="p">
-            As a designer I’m involved in all parts of the project lifecycle:
+            As a designer I’m involved in all parts of the project lifecycle—from brainstorm to launch.
           </Typography>
         </div>
         <div className={styles.processGroup}>
@@ -82,6 +82,7 @@ function Process() {
           <ul className={styles.toolsList}>
             <li className={styles.toolsListItem}>Balsamiq</li>
             <li className={styles.toolsListItem}>Sketch</li>
+            <li className={styles.toolsListItem}>Figma</li>
             <li className={styles.toolsListItem}>Adobe Illustrator</li>
             <li className={styles.toolsListItem}>And more</li>
           </ul>
@@ -118,7 +119,7 @@ function Process() {
           <ul className={styles.toolsList}>
             <li className={styles.toolsListItem}>HTML</li>
             <li className={styles.toolsListItem}>CSS (SASS)</li>
-            <li className={styles.toolsListItem}>jQuery</li>
+            <li className={styles.toolsListItem}>Javascript (currently learning)</li>
             <li className={styles.toolsListItem}>React (currently learning)</li>
             <li className={styles.toolsListItem}>And more</li>
           </ul>

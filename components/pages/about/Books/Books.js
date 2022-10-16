@@ -10,9 +10,19 @@ function BookTitles() {
       coverImage: '/images/books/permission-to-screw-up.jpg',
     },
     {
+      title: 'Impact Players',
+      author: 'Liz Wiseman',
+      coverImage: '/images/books/impact-players.jpg',
+    },
+    {
       title: 'Daring Greatly',
       author: 'Brene Brown',
       coverImage: '/images/books/daring-greatly.jpg',
+    },
+    {
+      title: 'The Power Of Regret',
+      author: 'Daniel Pink',
+      coverImage: '/images/books/the-power-of-regret.jpg',
     },
     {
       title: 'Leaders Eat Last',
@@ -77,7 +87,7 @@ function Books() {
           </div>
           <div className={styles.bodyWrapper}>
             <Typography variant="p">
-              I haven’t always been an avid reader, but in the last two years
+              I haven’t always been an avid reader, but in recent years
               I've gained a new appreciation for books and developed a love for
               reading. I read because I crave new thoughts, ideas, and
               perspectives that inspire, teach, and challenge&nbsp;me.

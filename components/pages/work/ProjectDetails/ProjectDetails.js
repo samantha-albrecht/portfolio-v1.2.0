@@ -4,6 +4,11 @@ import cn from 'classnames'
 
 function ProjectDetails({ currentPage }) {
   const projectDetailsContent = {
+    hsApp: {
+      organization: 'CoSchedule',
+      work: ['Research', 'Design'],
+      languages: ['Development in progress'],
+    },
     ami: {
       organization: 'CoSchedule',
       work: ['Design', 'Font-end development'],
