@@ -54,17 +54,12 @@ function HeadlineStudioView() {
               </Typography>
             </div>
             <p className={styles.projectBodyParagraph}>
-              There were various content challenges from differentiating
-              Headline Studio, the new app, from Headline Analyzer, the old
-              webpage, calling out features that had been upgraded and including
-              new premium features, and deciding whether of not to
-              include&nbsp;pricing.
+            The main challenge is addressing the needs of users with different experience levels.
             </p>
             <p className={styles.projectBodyParagraph}>
-              The main challenge, however, was to eliminate all friction that
-              prevents visitors from signing up. We want this page to be a
-              converting&nbsp;machine!
+            On one end of the spectrum, we have hobby bloggers who aren’t familiar with headline writing best practices. The idea of headline versions is new to them. They need to be educated on the benefits of writing more&nbsp;versions.
             </p>
+            <p className={styles.projectBodyParagraph}>On the other end of the spectrum, we have seasoned marketers who already know the best practices but they don’t know versions exist or understand how they work in Headline Studio. They already get the value or writing more versions but need to be shown how to use them in the&nbsp;app.</p>
 
             <div id="process" className={styles.sectionTitle}>
               <Typography variant="h2" size="xl" weight="h-bold">
