@@ -57,7 +57,7 @@ function HeadlineStudioView() {
             The main challenge is addressing the needs of users with different experience levels.
             </p>
             <p className={styles.projectBodyParagraph}>
-            On one end of the spectrum, we have hobby bloggers who aren’t familiar with headline writing best practices. The idea of headline versions is new to them. They need to be educated on the benefits of writing more&nbsp;versions
+            On one end of the spectrum, we have hobby bloggers who aren’t familiar with headline writing best practices. The idea of headline versions is new to them. They need to be educated on the benefits of writing more&nbsp;versions.
             </p>
             <p className={styles.projectBodyParagraph}>On the other end of the spectrum, we have seasoned marketers who already know the best practices but they don’t know versions exist or understand how they work in Headline Studio. They already get the value or writing more versions but need to be shown how to use them in the&nbsp;app.</p>
 
