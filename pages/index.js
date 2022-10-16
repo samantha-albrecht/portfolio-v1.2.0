@@ -14,7 +14,7 @@ export default function Index() {
           property="og:description"
           content="I'm a web designer who solves complex problems with intuitive design solutions to deliver user-friendly web experiences that produce business results."
         />
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="index, follow" />
         <link
           rel="alternate"
           hreflang="en"

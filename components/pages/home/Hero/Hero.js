@@ -16,8 +16,7 @@ function Hero() {
         </div>
         <div className={styles.byline}>
           <Typography variant="byline">
-            I solve complex problems with intuitive design solutions to deliver
-            user-friendly web experiences that produce business&nbsp;results.
+            I solve complex problems with intuitive design solutions to produce business&nbsp;results.
           </Typography>
         </div>
       </div>

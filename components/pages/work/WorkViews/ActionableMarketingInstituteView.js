@@ -224,7 +224,6 @@ function ActionableMarketingInstituteView() {
             </p>
             <img
               className={styles.imageContainer}
-              className={styles.imageContainer}
               src="/images/work/ami/project-screenshots-ami-course-categories.png"
               alt="AMI Pro course categories wireframe."
               width={810}

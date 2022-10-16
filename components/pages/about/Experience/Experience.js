@@ -39,12 +39,20 @@ function Experience() {
               </div>
             </div>
             <div className={styles.roleGroup}>
+            <div className={styles.role}>
+                <Typography variant="p" size="m" weight="p-bold">
+                  Product designer
+                </Typography>
+                <Typography variant="p" size="s">
+                  April 2022 - Present
+                </Typography>
+              </div>
               <div className={styles.role}>
                 <Typography variant="p" size="m" weight="p-bold">
                   Web designer
                 </Typography>
                 <Typography variant="p" size="s">
-                  April 2021 - Present
+                  April 2021 - April 2022
                 </Typography>
               </div>
               <div className={styles.role}>
