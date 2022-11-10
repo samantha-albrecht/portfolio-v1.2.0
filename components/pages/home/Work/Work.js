@@ -6,17 +6,6 @@ import styles from './Work.module.scss'
 function Project() {
   const projects = [
     {
-      imageSrc: '/images/work/hs-app.png',
-      imageAlt: 'Headline Studio by CoSchedule',
-      descriptionCaption: 'Headline Studio by CoSchedule',
-      descriptionTitle: 'Feature Education & User Adoption',
-      descriptionBody:
-        'The challenge: help users understand how to use one of the most powerful features in Headline Studio.',
-      projectUrl: '/work/headline-studio-app',
-      url: 'https://headlines.coschedule.com',
-      urlTitle: 'Go to Headline Studio',
-    },
-    {
       imageSrc: '/images/work/ami.png',
       imageAlt: 'Actionable Marketing Institute by CoSchedule',
       descriptionCaption:
@@ -27,6 +16,7 @@ function Project() {
       projectUrl: '/work/actionable-marketing-institute',
       url: 'https://coschedule.com/actionable-marketing-institute/ami-pro',
       urlTitle: 'Go to the Actionable Marketing Institute',
+      buttonText: 'Learn more',
     },
     {
       imageSrc: '/images/work/hs.png',
@@ -38,6 +28,19 @@ function Project() {
       projectUrl: '/work/headline-studio',
       url: 'https://coschedule.com/headline-studio',
       urlTitle: 'Go to Headline Studio',
+      buttonText: 'Learn more',
+    },
+    {
+      imageSrc: '/images/work/hs-app.png',
+      imageAlt: 'Headline Studio by CoSchedule',
+      descriptionCaption: 'Headline Studio by CoSchedule',
+      descriptionTitle: 'Feature Education & User Adoption',
+      descriptionBody:
+        'The challenge: help users understand how to use one of the most powerful features in Headline Studio.',
+      projectUrl: '',
+      url: 'https://headlines.coschedule.com',
+      urlTitle: 'Go to Headline Studio',
+      buttonText: 'Coming Soon',
     },
   ]
 
@@ -93,7 +96,7 @@ function Project() {
                 </Typography>
                 <Typography variant="p">{project.descriptionBody}</Typography>
                 <Link href={project.projectUrl}>
-                  <a className={styles.descriptionLink}>Learn more</a>
+                  <a className={styles.descriptionLink}>{project.buttonText}</a>
                 </Link>
               </div>
             </div>
