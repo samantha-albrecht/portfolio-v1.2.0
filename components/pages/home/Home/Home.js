@@ -2,14 +2,14 @@ import Cta from '@components/blocks/Cta'
 import PageWrapper from '@components/foundation/PageWrapper'
 import Hero from '../Hero'
 import Process from '../Process'
-// import Quote from '../Quote'
+import Quote from '../Quote'
 import Work from '../Work'
 
 function Home() {
   return (
     <PageWrapper>
       <Hero />
-      {/* <Quote /> */}
+      <Quote />
       <Work />
       <Process />
       <Cta />

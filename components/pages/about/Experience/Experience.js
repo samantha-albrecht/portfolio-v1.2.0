@@ -34,7 +34,7 @@ function Experience() {
                   CoSchedule
                 </Typography>
                 <Typography variant="p" size="s">
-                  3 years
+                  3+ years
                 </Typography>
               </div>
             </div>
